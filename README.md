@@ -2,8 +2,7 @@
 
 Prevents the Car from Flipping over via Controls once its upside down.
 
-# Installation:
+# TODO
 
--   Clone or Download to "src/core/plugins":
+- [ ] Increase angle of attack
 
-https://github.com/ShakirPlayZ/tfc-vehicle-noFlip
