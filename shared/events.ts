@@ -1,5 +1,5 @@
-export enum TFC_VEHICLE_EVENTS {
-    CHECK_VEHICLE_ROT = 'tfcvehicledamage:checkVehicleRotation',
-    DISABLE_CONTROLS = 'tfcvehicledamage:disableControls',
-    ENABLE_CONTROLS = 'tfcvehicledamage:enableControls',
+export enum BC_VEHICLE_EVENTS {
+    CHECK_VEHICLE_ROT = 'bcvehicledamage:checkVehicleRotation',
+    DISABLE_CONTROLS = 'bcvehicledamage:disableControls',
+    ENABLE_CONTROLS = 'bcvehicledamage:enableControls',
 }

@@ -1,7 +1,7 @@
 import alt, { Player } from 'alt-server';
-import { TFC_VEHICLE_EVENTS } from '../../shared/events';
+import { BC_VEHICLE_EVENTS } from '../../shared/events';
 
-export class TfcVehicleDamageServer {
+export class BCVehicleDamageServer {
     static init() {}
 }
 
@@ -19,6 +19,6 @@ setInterval(() => {
             return;
         }
 
-        alt.emitClient(player, TFC_VEHICLE_EVENTS.CHECK_VEHICLE_ROT);
+        alt.emitClient(player, BC_VEHICLE_EVENTS.CHECK_VEHICLE_ROT);
     });
 }, 500);

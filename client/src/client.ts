@@ -1,14 +1,14 @@
 import * as alt from 'alt-client';
 import * as native from 'natives';
-import { TFC_VEHICLE_EVENTS } from '../../shared/events';
+import { BC_VEHICLE_EVENTS } from '../../shared/events';
 
 let disableFlippingControls = false;
 let everyTickControls: number;
 let everyTickAttacks: number;
 
-export class TfcVehicleDamageClient {
+export class BCVehicleDamageClient {
     static init() {
-        alt.onServer(TFC_VEHICLE_EVENTS.CHECK_VEHICLE_ROT, this.checkRotation);
+        alt.onServer(BC_VEHICLE_EVENTS.CHECK_VEHICLE_ROT, this.checkRotation);
     }
 
     static checkRotation(player: alt.Player) {
