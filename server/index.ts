@@ -1,10 +1,14 @@
 import alt from 'alt-server';
-import { TfcVehicleDamageServer } from './src/server';
 import * as Athena from '@AthenaServer/api';
 
-const PLUGIN_NAME = 'TFC Vehicle Damage';
+import { BCVehicleDamageServer } from './src/server';
+import { INDEX_CONFIG } from '../shared/config';
 
-Athena.systems.plugins.registerPlugin(PLUGIN_NAME, async () => {
-    TfcVehicleDamageServer.init();
-    alt.log(`~lg~${PLUGIN_NAME} successfully loaded.`);
+Athena.systems.plugins.registerPlugin(INDEX_CONFIG.PLUGIN_NAME, () => {
+    BCVehicleDamageServer.init();
+    alt.log(
+        `~lg~[PLUGIN] ==> ${INDEX_CONFIG.PLUGIN_NAME} V.${INDEX_CONFIG.VERSION} - Athena V.${
+            INDEX_CONFIG.ATHENA_VERSION
+        } successfully loaded.(~w~Authors: ${INDEX_CONFIG.AUTHORS.join(', ')}~lg~)`,
+    );
 });
